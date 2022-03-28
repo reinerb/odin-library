@@ -13,6 +13,23 @@ body {
   gap: 2rem;
 }
 
+button {
+  cursor: pointer;
+  border: 1px solid black;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.25rem 0.75rem;
+  background: none;
+  border-radius: 0.5rem;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background-color: aliceblue;
+}
+
 .library-grid {
   display: flex;
   align-items: center;
@@ -23,8 +40,8 @@ body {
 }
 
 .book-card {
-  width: 200px;
-  height: 275px;
+  width: 250px;
+  height: 300px;
   padding: 0.5rem;
   border: 1px solid black;
   border-radius: 0.5rem;
@@ -46,10 +63,6 @@ body {
   margin-top: auto;
   display: flex;
   justify-content: space-between;
-}
-
-.read {
-  background-color: green;
 }
 
 .inactive {
