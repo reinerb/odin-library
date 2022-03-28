@@ -29,10 +29,27 @@ body {
   border: 1px solid black;
   border-radius: 0.5rem;
   box-shadow: 0.25rem 0.25rem 1em black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.book-card > :first-child {
+  font-style: italic;
 }
 
 .book-card > * + * {
   margin-top: 0.5em;
+}
+
+.book-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.read {
+  background-color: green;
 }
 
 .inactive {

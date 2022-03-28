@@ -88,6 +88,10 @@ const displayBook = function (book, div, libraryIndex) {
 
   let removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
+  removeButton.setAttribute(
+    "onclick",
+    "removeBookFromLibrary(myLibrary, this.parentNode.getAttribute('data-index'))"
+  );
 
   let readButton = document.createElement("button");
   readButton.textContent = book.isRead ? "Mark not read" : "Mark read";
