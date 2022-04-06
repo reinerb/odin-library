@@ -13,19 +13,18 @@ const clearDisplay = function (parent) {
 };
 
 // Define a book object
-function Book(title, author, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.isRead = false;
+class Book {
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = false;
+  }
+
+  toggleRead() {
+    this.isRead = !this.isRead;
+  }
 }
-
-// Book prototype functions
-
-// Mark this book as read
-Book.prototype.toggleRead = function () {
-  this.isRead = this.isRead ? false : true;
-};
 
 // Generate a new book from form values
 const bookFromForm = function () {
